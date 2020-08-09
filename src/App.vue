@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <StyledHeader
+      title="Title Name Goes Here"
+      description="This is the description or problem statement of the application"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import StyledHeader  from './components/StyledHeader.vue';
 export default {
   name: "App",
   components: {
-    HelloWorld
+    StyledHeader
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
 </style>
